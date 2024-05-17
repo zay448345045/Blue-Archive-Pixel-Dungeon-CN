@@ -206,7 +206,7 @@ public class TitleScene extends PixelScene {
 			btnAbout.setRect(btnSettings.right()+2, btnSettings.top(), btnSettings.width(), BTN_HEIGHT);
 		}
 
-		StyledButton btnLocalization = new LocalizationButton(GREY_TR, "翻译声明");
+		StyledButton btnLocalization = new LocalizationButton(GREY_TR, "译者注");
 		add(btnLocalization);
 		btnLocalization.setRect(0, h - BTN_HEIGHT, 50, BTN_HEIGHT);
 
@@ -378,12 +378,12 @@ public class TitleScene extends PixelScene {
 		@Override
 		protected void onClick() {
 			ShatteredPixelDungeon.scene().add(new WndMessage(
-					"本文主要总结ba地牢自上个版本（0.2.3）至0.3.2的bug，翻译内容以原文为准，部分问题可能已在0.4.0修复，但实际效果和描述对不上这种事cocoa也不是头一回干了，所以与实际体验不符但原文文本写着的内容在此列出，以供参考。\n" +
+					"主要总结ba地牢自上个版本（0.2.3）至当前版本的bug，翻译内容以原文为准，部分问题可能已在0.4.0修复，但实际效果和描述对不上这种事cocoa也不是头一回干了，所以与实际体验不符但原文文本写着的内容在此列出，以供参考。\n" +
 					"因能力与精力有限，无法面面俱到，可能存在bug没有列出，一切以实际体验为准。\n\n" +
-					"泉奈的投掷武器穿防不生效，虽然伤害图标变成穿刺视效但实际伤害仍然计算防御，包括忍具套装的手里剑和苦无。\n" +
+					"0.3.2版本中泉奈的投掷武器穿防不生效，本版本修了但没完全修好，现在泉奈的枪支子弹也穿防但近身时穿防又全部失效。\n" +
 					"泉奈的初始两点隐匿加成如果不装备防具则不起效，1-1天赋加成同理。\n" +
 					"忍具套装可以被升级卷轴升级，但是不会增加伤害，其伤害只与人物等级有关；\n" +
-					"但是忍具套装的充能上限与升级有关，所以升级卷轴+2可增加1点充能上限。\n" +
+					"但忍具套装的充能上限与升级有关，所以+2可增加1点充能上限。\n" +
 					"泉奈1-3天赋只改了名称和图标，数值实际上仍然是破碎盗贼的+1-2 / +2。\n" +
 					"泉奈读魔典不触发2-2天赋，但这是evan的问题，破碎盗贼读魔典也不触发2-2。\n" +
 					"泉奈ex2标记敌人以后如果切换楼层，在有任何回合流逝的情况下技能会被设置成无法触发，切换回原楼层后无法使用，但是再次标记一个敌人后可以使用。\n" +
